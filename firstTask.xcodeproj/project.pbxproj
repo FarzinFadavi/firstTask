@@ -3,22 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A520FFBD2B55111A00BA1C40 /* firstTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FFBC2B55111A00BA1C40 /* firstTaskApp.swift */; };
-		A520FFBF2B55111A00BA1C40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FFBE2B55111A00BA1C40 /* ContentView.swift */; };
 		A520FFC12B55112000BA1C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A520FFC02B55112000BA1C40 /* Assets.xcassets */; };
 		A520FFC42B55112000BA1C40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A520FFC32B55112000BA1C40 /* Preview Assets.xcassets */; };
+		A520FFCE2B55151600BA1C40 /* SunriseSunsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FFCD2B55151600BA1C40 /* SunriseSunsetView.swift */; };
+		A520FFD02B56795700BA1C40 /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FFCF2B56795700BA1C40 /* SineWave.swift */; };
+		A520FFD22B5679C800BA1C40 /* AnimatableSineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FFD12B5679C800BA1C40 /* AnimatableSineWave.swift */; };
+		A520FFD42B567A3600BA1C40 /* SunPathAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FFD32B567A3600BA1C40 /* SunPathAnimationModifier.swift */; };
+		A520FFD82B567BEA00BA1C40 /* SunEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520FFD72B567BEA00BA1C40 /* SunEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A520FFB92B55111A00BA1C40 /* firstTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A520FFBC2B55111A00BA1C40 /* firstTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTaskApp.swift; sourceTree = "<group>"; };
-		A520FFBE2B55111A00BA1C40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A520FFC02B55112000BA1C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A520FFC32B55112000BA1C40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A520FFCD2B55151600BA1C40 /* SunriseSunsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunsetView.swift; sourceTree = "<group>"; };
+		A520FFCF2B56795700BA1C40 /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
+		A520FFD12B5679C800BA1C40 /* AnimatableSineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableSineWave.swift; sourceTree = "<group>"; };
+		A520FFD32B567A3600BA1C40 /* SunPathAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunPathAnimationModifier.swift; sourceTree = "<group>"; };
+		A520FFD72B567BEA00BA1C40 /* SunEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				A520FFBC2B55111A00BA1C40 /* firstTaskApp.swift */,
-				A520FFBE2B55111A00BA1C40 /* ContentView.swift */,
+				A520FFCA2B55133E00BA1C40 /* View */,
+				A520FFD62B567BCF00BA1C40 /* Components */,
 				A520FFC02B55112000BA1C40 /* Assets.xcassets */,
 				A520FFC22B55112000BA1C40 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				A520FFC32B55112000BA1C40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A520FFCA2B55133E00BA1C40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A520FFCD2B55151600BA1C40 /* SunriseSunsetView.swift */,
+				A520FFCF2B56795700BA1C40 /* SineWave.swift */,
+				A520FFD12B5679C800BA1C40 /* AnimatableSineWave.swift */,
+				A520FFD32B567A3600BA1C40 /* SunPathAnimationModifier.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A520FFD62B567BCF00BA1C40 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A520FFD72B567BEA00BA1C40 /* SunEventView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +131,7 @@
 				};
 			};
 			buildConfigurationList = A520FFB42B55111A00BA1C40 /* Build configuration list for PBXProject "firstTask" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A520FFBF2B55111A00BA1C40 /* ContentView.swift in Sources */,
+				A520FFD02B56795700BA1C40 /* SineWave.swift in Sources */,
+				A520FFD42B567A3600BA1C40 /* SunPathAnimationModifier.swift in Sources */,
+				A520FFD82B567BEA00BA1C40 /* SunEventView.swift in Sources */,
+				A520FFCE2B55151600BA1C40 /* SunriseSunsetView.swift in Sources */,
 				A520FFBD2B55111A00BA1C40 /* firstTaskApp.swift in Sources */,
+				A520FFD22B5679C800BA1C40 /* AnimatableSineWave.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

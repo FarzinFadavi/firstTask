@@ -11,7 +11,7 @@ import SwiftUI
 struct firstTaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SunriseSunsetView()
         }
     }
 }

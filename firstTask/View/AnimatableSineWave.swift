@@ -6,3 +6,36 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct AnimatableSineWave: Shape {
+    var phase: CGFloat
+    let startRadians = -CGFloat.pi / 2
+    let endRadians = 3 * CGFloat.pi / 2
+    
+    var animatableData: CGFloat {
+        get { phase }
+        set { phase = newValue }
+    }
+    
+    func path(in rect: CGRect) -> Path {
+        let width = rect.width
+        let height = rect.height
+        let midHeight = height / 2
+        let amplitude = height / 3
+        let scale = width / (endRadians - startRadians)
+        
+        var path = Path()
+        for x in stride(from: 0, through: width, by: 1) {
+            let radians = startRadians + CGFloat(x) / scale
+            let y = -amplitude * sin(radians) + midHeight
+            if x == 0 {
+                path.move(to: CGPoint(x: x, y: y))
+            } else {
+                path.addLine(to: CGPoint(x: x, y: y))
+            }
+        }
+        
+        return path.trimmedPath(from: 0, to: phase)
+    }
+}
